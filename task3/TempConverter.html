@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;background-color:silver;
+		}
+		h1 {
+			text-align: center;
+		}
+		form {
+			margin: 0 auto;
+			width: 50%;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="number"] {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		select {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		#result {
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Temperature Converter</h1>
+	<form>
+		<label for="temperature">Enter Temperature:</label>
+		<input type="number" id="temperature" placeholder="Temperature" required>
+	<label for="unit">Select Unit:</label>
+	<select id="unit">
+		<option value="celsius">Celsius</option>
+		<option value="fahrenheit">Fahrenheit</option>
+	</select>
+
+	<button type="button" onclick="convertTemperature()">Convert</button>
+
+	<div id="result"></div>
+</form>
+
+<script>
+	function convertTemperature() {
+		// Get input value and unit
+		const temperatureInput = document.getElementById("temperature").value;
+		const unit = document.getElementById("unit").value;
+
+		// Validate input is a number
+		if (isNaN(temperatureInput)) {
+			alert("Please enter a valid number for temperature.");
+			return;
+		}
+
+		// Convert temperature based on unit
+		let convertedTemp;
+		let convertedUnit;
+
+		if (unit === "celsius") {
+			convertedTemp = (temperatureInput * 9/5) + 32;
+			convertedUnit = "Fahrenheit";
+		} else {
+			convertedTemp = (temperatureInput - 32) * 5/9;
+			convertedUnit = "Celsius";
+		}
+
+		// Display result
+		document.getElementById("result").innerHTML = `${temperatureInput} degrees ${unit} is ${convertedTemp.toFixed(2)} degrees ${convertedUnit}.`;
+	}
+</script>
+</body>
+</html>

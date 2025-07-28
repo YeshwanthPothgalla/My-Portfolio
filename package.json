@@ -1,0 +1,32 @@
+{
+  "name": "yeshwanth-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Yeshwanth Pothagalla - Full Stack Developer",
+  "main": "portfolio/index.html",
+  "scripts": {
+    "start": "npx serve portfolio",
+    "dev": "npx live-server portfolio",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Ready for deployment'"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "full-stack",
+    "javascript",
+    "html",
+    "css",
+    "responsive-design"
+  ],
+  "author": "Yeshwanth Pothagalla",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YeshwanthPothgalla/portfolio"
+  },
+  "homepage": "https://yeshwanthpothgalla.github.io/portfolio"
+}

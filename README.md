@@ -19,11 +19,10 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ├── projects/
 │   ├── time-management-landing.html    # Time management project
 │   ├── time-management-styles.css      # Project styles
-│   └── temperature-converter.html      # Temperature converter app
+│   └── [future projects]               # Additional projects
 ├── assets/
 │   ├── profile-photo.jpg               # Profile image
 │   ├── time-management-project.jpg     # Project screenshots
-│   ├── temperature-converter-project.jpg
 │   └── time-background.jpg
 └── package.json            # Project configuration
 ```

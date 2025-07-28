@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Code</title>
+  <title>Yeshwanth Pothagalla - Portfolio</title>
   <link rel="stylesheet" href="port.css" />
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -16,154 +17,326 @@
     <nav class="navbar">
       <div class="navbar-container container">
         <div>
-          <h1 class="navbar-brand">Sanket Bodake</h1>
+          <h1 class="navbar-brand">Yeshwanth Pothagalla</h1>
         </div>
         <ul class="menu-items">
+          <li><a href="#home-page">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="https://github.com/YeshwanthPothgalla?tab=repositories">Projects</a></li>
+          <li><a href="#my-works">Projects</a></li>
           <li><a href="#contact-me">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
     <div class="home-content" id="home-page">
       <div class="name">
-        <h1>Hello, I'm Yeshwanth Pothagalla</h1>
-        <p>An Optimist, Philanthopist</p>
+        <h1>Hello, I'm <span class="highlight">Yeshwanth Pothagalla</span></h1>
+        <p>Full Stack Developer & Problem Solver</p>
+        <div class="cta-buttons">
+          <a href="#my-works" class="btn-primary">View My Work</a>
+          <a href="#contact-me" class="btn-secondary">Get In Touch</a>
+        </div>
       </div>
       <div class="angle-down-icon">
         <a href="#about"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
   </header>
+
   <section class="about-me" id="about">
     <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
       <div class="about-content">
         <div class="left-content">
-          <div>
-            <h1 class="about-heading">About Me</h1>
+          <div class="profile-image-container">
+            <img src="myself.jpg" alt="Yeshwanth Pothagalla" />
+            <div class="image-overlay"></div>
           </div>
-          <img src="myself.jpg" alt="image" />
-          <p>
-            I'm a dedicated and hardworking individual who maintains an optimistic outlook and holds a strong faith
+          <p class="about-description">
+            I'm a passionate full-stack developer with a strong foundation in modern web technologies. 
+            I love creating efficient, scalable solutions and am always eager to learn new technologies 
+            and tackle challenging problems.
           </p>
           <div class="work-arrow">
             <p>
-              <a href="https://github.com/YeshwanthPothgalla?tab=repositories">Check out my work <i class="fas fa-arrow-right"></i></a>
+              <a href="#my-works">Check out my work <i class="fas fa-arrow-right"></i></a>
             </p>
           </div>
         </div>
         <div class="skills">
           <div class="right-content">
             <div>
-              <h1 class="skills-heading">My Skills</h1>
+              <h3 class="skills-heading">Technical Skills</h3>
             </div>
-            <div class="skills-bar">
-              <div class="bar">
-                <div class="info">
-                  <span>HTML</span>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
                 </div>
-                <div class="progress-line"><span class="html"></span></div>
-                <div class="bar">
-                  <div class="info">
-                    <span>CSS</span>
-                  </div>
-                  <div class="progress-line"><span class="css"></span></div>
-                  <div class="bar">
-                    <div class="info">
-                      <span>BOOTSTRAP</span>
-                    </div>
-                    <div class="progress-line"><span class="bootstrap"></span></div>
-                    <div class="bar">
-                      <div class="info">
-                        <span>JAVASCRIPT</span>
-                      </div>
-                      <div class="progress-line"><span class="javascript"></span></div>
-                      <div class="bar">
-                        <div class="info">
-                          <span>C Programming</span>
-                        </div>
-                        <div class="progress-line"><span class="c"></span></div>
-                      </div>
-                    </div>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="work-arrow-2">
-              <p>
-                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-              </p>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Bootstrap</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">C Programming</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- <section id="my-works">
-    <div class="portfolio">
-      <div class="proj-heading">
-        <h1>Projects</h1>
+
+  <section id="my-works" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Here are some of my recent works</p>
       </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-          <img src="time.jpg">
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            
-            <h2>Time management landing page</h2>
-            <p>Build Using HTML,CSS</p>
-            <button><a href="#" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="#" target="blank">Try it Live <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
+      <div class="portfolio-content">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="time.jpg" alt="Time Management Landing Page">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <h3>Time Management Landing Page</h3>
+            <p>A responsive landing page focused on time management solutions with modern design principles.</p>
           </div>
         </div>
 
-        <div class="proj-2">
-          <img src="temperature.jpg">
-          <div class="proj2-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>Temperature Converter</h2>
-            <p>Build Using HTML,CSS,Java script</p>
-            <button><a href="#" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="#" target="blank">Try it Live <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="temperature.jpg" alt="Temperature Converter">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
+          <div class="project-info">
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <h3>Temperature Converter</h3>
+            <p>An interactive temperature converter application with real-time conversion between Celsius and Fahrenheit.</p>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Portfolio Website">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website showcasing my projects and skills with modern design and smooth animations.</p>
+          </div>
         </div>
-        <div class="more-work">
-          <p>
-            More
-          </p>
-          <a href="#" target="blank">Linkedln</a>
-        </div>
+      </div>
+      <div class="more-work">
+        <a href="https://github.com/YeshwanthPothgalla?tab=repositories" target="_blank" class="btn-primary">
+          View All Projects <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
     </div>
-  </section> -->
-  <div class="contact" id="contact-me">
+  </section>
+
+  <section class="contact" id="contact-me">
     <div class="container">
       <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i>yeshwanthp8375@gmail.com
-        </p>
-        <p class="links">Or find me on:</p>
-        <a href="http://www.linkedin.com/in/yeshwanth-pothagalla-43868725b"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        <a href="https://github.com/YeshwanthPothgalla?tab=repositories"><i class="fab fa-github"></i> Github</a>
-        
-        <a href="#"><i class="fab fa-twitter"> Twitter</i></a>
-        <a href="https://instagram.com/yeshwanth_pothagalla?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i> Instagram</a>
+        <div class="section-header">
+          <h2 class="section-title">Let's Work Together</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">I'm always interested in new opportunities and collaborations</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>yeshwanthp8375@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>Available upon request</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Available for remote work</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="http://www.linkedin.com/in/yeshwanth-pothagalla-43868725b" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/YeshwanthPothgalla?tab=repositories" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/yeshwanth_pothagalla?igshid=YmMyMTA2M2Y=" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Navbar background change on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('solid');
+      } else {
+        navbar.classList.remove('solid');
+      }
+    });
+
+    // Animate skill bars when in view
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const skillProgress = entry.target.querySelector('.skill-progress');
+          const width = skillProgress.getAttribute('data-width');
+          skillProgress.style.width = width;
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.skill-item').forEach(skill => {
+      observer.observe(skill);
+    });
+
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const menuItems = document.querySelector('.menu-items');
+
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      menuItems.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
